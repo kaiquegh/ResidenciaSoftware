@@ -1,0 +1,101 @@
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Del&iacute;cias da Nane
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/home.css')
+  link(rel='stylesheet' href='css/delicias.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/mdb.min.css')
+  link(rel='stylesheet' href='css/style.css')
+
+header.transition
+  .navegacao
+    ul.menu.clearfix
+      li
+        a(href='/') home
+      li
+        a(href='/delicias') delicias
+        // Nível 1
+        // submenu
+        ul.sub-menu.clearfix
+          li
+            a(href='/corte') Bolos de Corte
+          li
+            a(href='#') Bolos de Pote
+            // Nível 2
+            // submenu do submenu
+            ul.sub-menu
+              li
+                a(href='#') Tradicionais
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/beijinho') beijinho
+                  li
+                    a(href='/brigadeiro') Brigadeiro
+                  li
+                    a(href='/churros') churros
+                  li
+                    a(href='/danette') danette
+                  li
+                    a(href='limao') lim&atilde;o
+                  li
+                    a(href='limaoBrigadeiro') lim&atilde;o c/ brigadeiro
+                  li
+                    a(href='maracuja') maracuj&aacute;
+                  li
+                    a(href='pacoca') pa&ccedil;oca
+                  li
+                    a(href='pacocaBrigadeiro') pa&ccedil;oca c/ brigadeiro
+                  li
+                    a(href='/prestigio') prest&iacute;gio
+                // submenu do submenu do submenu
+              li
+                a(href='#') Premium
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/abacaxiCoco') Abacaxi c/ coco
+                  li
+                    a(href='/banana') banana caramelada
+                  li
+                    a(href='/floresta') floresta negra
+                  li
+                    a(href='/maracujaChantilly') maracuj&aacute; c/ chantilly
+                  li
+                    a(href='/morangoNutella') morango c/ nutella
+                  li
+                    a(href='/ninhoMorango') ninho c/ morango
+                  li
+                    a(href='/ninhoNutella') ninho c/ nutella
+                  li
+                    a(href='/nutellaMMs') nutella c/ m&amp;ms
+                  li
+                    a(href='/oreo') oreo
+                  li
+                    a(href='/ovomaltine') ovomaltine
+                // submenu do submenu do submenu
+            // submenu do submenu
+          li
+            a(href='/cupcakes') cupcakes
+          li
+            a(href='/docinhos') docinhos
+        // submenu
+      li
+        a(href='/#sobre') sobre
+      li
+        a(href='/#contato') contato
+  .logo
+    figure
+      img(src='imagens/Logo.png' alt='Logo Delícias da Nane')
+  section.busca
+    .text-center
+      a.btn.purple-gradient.btn-rounded(href='#' data-toggle='modal' data-target='#elegantModalForm') login
+    form.form-inline
+      input.form-control.mr-sm-2(type='search' placeholder='Pesquisar' aria-label='Pesquisar')
+      button.btn.btn-outline-info(type='submit') Pesquisar

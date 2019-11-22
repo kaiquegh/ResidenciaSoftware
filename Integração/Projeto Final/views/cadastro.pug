@@ -1,0 +1,236 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Del&iacute;cias da Nane
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/cadastro.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/mdb.min.css')
+  
+
+header.transition
+  .navegacao
+    ul.menu.clearfix
+      li
+        a(href='/') home
+      li
+        a(href='/delicias') delicias
+        // Nível 1
+        // submenu
+        ul.sub-menu.clearfix
+          li
+            a(href='#') Bolos de Corte
+          li
+            a(href='#') Bolos de Pote
+            // Nível 2
+            // submenu do submenu
+            ul.sub-menu
+              li
+                a(href='#') Tradicionais
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='#') beijinho
+                  li
+                    a(href='#') Brigadeiro
+                  li
+                    a(href='#') churros
+                  li
+                    a(href='#') danette
+                  li
+                    a(href='#') lim&atilde;o
+                  li
+                    a(href='#') lim&atilde;o c/ brigadeiro
+                  li
+                    a(href='#') maracuj&aacute;
+                  li
+                    a(href='#') pa&ccedil;oca
+                  li
+                    a(href='#') pa&ccedil;oca c/ brigadeiro
+                  li
+                    a(href='#') prest&iacute;gio
+                // submenu do submenu do submenu
+              li
+                a(href='#') Premium
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='#') Abacaxi c/ coco
+                  li
+                    a(href='#') banana caramelada
+                  li
+                    a(href='#') floresta negra
+                  li
+                    a(href='#') maracuj&aacute; c/ chantilly
+                  li
+                    a(href='#') morango c/ nutella
+                  li
+                    a(href='#') ninho c/ morango
+                  li
+                    a(href='#') ninho c/ nutella
+                  li
+                    a(href='#') nutella c/ m&amp;ms
+                  li
+                    a(href='#') oreo
+                  li
+                    a(href='#') ovomaltine
+                // submenu do submenu do submenu
+            // submenu do submenu
+          li
+            a(href='#') cupcakes
+          li
+            a(href='#') docinhos
+        // submenu
+      li
+        a(href='/#sobre') sobre
+      li
+        a(href='/#contato') contato
+  .logo
+    figure
+      img(src='imagens/Logo.png' alt='Logo Delícias da Nane')
+  section.busca
+    .text-center
+      a.btn.purple-gradient.btn-rounded(href='' data-toggle='modal' data-target='#elegantModalForm') login
+    form.form-inline
+      input.form-control.mr-sm-2(type='search' placeholder='Pesquisar' aria-label='Pesquisar')
+      button.btn.btn-outline-info(type='submit') Pesquisar
+#home.corpo
+  #tituloCadastro
+    h2
+      b Cadastro
+    h4 Del&iacute;cias da Nane
+    p
+      | Preencha os campos do formul&aacute;rio abaixo para concluir seu cadastro em nossa p&aacute;gina.
+  .cadastro
+    #cadastroBg
+      .container
+        form.needs-validation(novalidate='')
+          .form-row
+            .col-md-9.mb-3
+              label(for='validationCustom01') Nome completo
+              input#validationCustom01.form-control(type='text' placeholder='Nome completo' value='' required='')
+              .valid-feedback
+                | Tudo certo!
+            .col-md-3.mb-3
+              label(for='validationCustom05') Celular
+              input#validationCustom05.form-control(type='tel' placeholder='(XX) XXXXX-XXXX' required='' maxlength='15' onkeyup='mascara(this, mtel);')
+              .invalid-feedback
+                | Por favor, informe um CEP v&aacute;lido.
+          .form-row
+            .col-md-3.mb-3
+              label(for='validationCustom01') Identidade
+              input#validationCustom01.form-control(type='text' maxlength='12' placeholder='Informe seu RG' value='' onkeyup='mascara(this, mrg);' required='')
+              .valid-feedback
+                | Tudo certo!
+            .col-md-3.mb-3
+              label(for='validationCustom01') &Oacute;rg&atilde;o Emissor
+              input#validationCustom01.form-control(type='text' maxlength='10' value='' required='')
+              .valid-feedback
+                | Tudo certo!
+            .col-md-3.mb-3
+              label(for='validationCustom05') Data de Exp.
+              input#validationCustom05.form-control(type='tel' placeholder='Emitida em' required='' maxlength='10' onkeyup='mascara(this, mdata);')
+              .invalid-feedback
+                | Por favor, informe um CEP v&aacute;lido.
+            .col-md-3.mb-3
+              label(for='validationCustom05') CPF
+              input#validationCustom05.form-control(type='tel' placeholder='Informe seu CPF' required='' maxlength='14' onkeyup='mascara(this, mcpf);')
+              .invalid-feedback
+                | Por favor, informe um CPF v&aacute;lido.
+          .form-row
+            .col-md-8.mb-3
+              label(for='validationCustom01') Endere&ccedil;o
+              input#validationCustom01.form-control(type='text' placeholder='Rua, Avenida, Estrada, ...' value='' required='')
+              .valid-feedback
+                | Tudo certo!
+            .col-md-2.mb-3
+              label(for='validationCustom01') N&uacute;mero
+              input#validationCustom01.form-control(type='text' placeholder='número' value='' required='')
+              .valid-feedback
+                | Tudo certo!
+            .col-md-2.mb-3
+              label(for='validationCustom01') Complemento
+              input#validationCustom01.form-control(type='text' placeholder='Apto., Casa, ...' value='' required='')
+              .valid-feedback
+                | Tudo certo!
+          .form-row
+            .col-md-6.mb-3
+              label(for='validationCustom03') Bairro
+              input#validationCustom03.form-control(type='text' placeholder='Bairro' required='')
+              .invalid-feedback
+                | Por favor, informe seu bairro.
+            .col-md-6.mb-3
+              label(for='validationCustom03') Cidade
+              input#validationCustom03.form-control(type='text' placeholder='Cidade' required='')
+              .invalid-feedback
+                | Por favor, informe sua Cidade.
+            .col-md-3.mb-3
+              label(for='validationCustom03') Estado
+              input#validationCustom04.form-control(type='text' placeholder='Estado' required='')
+              .invalid-feedback
+                | Por favor, informe seu estado.
+            .col-md-3.mb-3
+              label(for='validationCustom05') CEP
+              input#validationCustom05.form-control(type='text' placeholder='XXXXX-XXX' required='' onkeyup='mascara(this, mcep);' maxlength='9')
+              .invalid-feedback
+                | Por favor, informe um CEP v&aacute;lido.
+            .col-md-6.mb-3
+              label(for='validationCustom03') E-mail
+              input#validationCustom03.form-control(type='text' placeholder='exemplo@seue-mail.com' required='')
+              .invalid-feedback
+                | Por favor, informe um e-mail v&aacute;lido.
+          .form-row
+            .col-md-3.mb-3
+              label(for='validationCustom06') Senha
+              input#validationCustom06.form-control(type='password' minlength='8' maxlength='20' required='' aria-describedby='passwordHelpBlock')
+              small#passwordHelpBlock.form-text.text-muted
+                | Sua senha deve ter entre 8 e 20 caracteres.
+              .invalid-feedback
+                | Por favor, informe uma senha v&aacute;lida.
+            .col-md-3.mb-3
+              label(for='validationCustom06') Confirme sua senha
+              input#validationPassword5.form-control(type='password' minlength='8' maxlength='20' required='' aria-describedby='passwordHelpBlock')
+              small#passwordHelpBlock.form-text.text-muted
+                | Repita sua senha.
+              .invalid-feedback
+                | Por favor, informe uma senha v&aacute;lida.
+          .form-group
+            .form-check
+              input#invalidCheck.form-check-input(type='checkbox' value='' required='')
+              label.form-check-label(for='invalidCheck')
+                | Concordo com os termos e condi&ccedil;&otilde;es
+              .invalid-feedback
+                | Voc&ecirc; deve concordar, antes de continuar.
+          button.btn.btn-primary(type='submit') Enviar
+        script.
+          // Exemplo de JavaScript inicial para desativar envios de formulário, se houver campos inválidos.
+          (function () {
+          'use strict';
+          window.addEventListener('load', function () {
+          // Pega todos os formulários que nós queremos aplicar estilos de validação Bootstrap personalizados.
+          var forms = document.getElementsByClassName('needs-validation');
+          // Faz um loop neles e evita o envio
+          var validation = Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+          if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+          }, false);
+          });
+          }, false);
+          })();
+// INÍCIO CÓDIGO FOOTER
+include footer.pug
+script(src='js/jquery-3.4.1.min.js')
+script(src='js/popper.js')
+script(src='js/bootstrap.min.js')
+script(src='js/mdb.min.js')
+script(src='js/script-index.js')
+

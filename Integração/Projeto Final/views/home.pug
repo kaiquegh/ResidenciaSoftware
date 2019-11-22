@@ -1,0 +1,264 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Del&iacute;cias da Nane
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/home.css')
+  link(rel='stylesheet' href='css/delicias.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/mdb.min.css')
+  link(rel='stylesheet' href='css/style.css')
+
+  
+header.transition
+  .navegacao
+    ul.menu.clearfix
+      li
+        a(href='/') home
+      li
+        a(href='/delicias') delicias
+        // Nível 1
+        // submenu
+        ul.sub-menu.clearfix
+          li
+            a(href='/corte') Bolos de Corte
+          li
+            a(href='#') Bolos de Pote
+            // Nível 2
+            // submenu do submenu
+            ul.sub-menu
+              li
+                a(href='#') Tradicionais
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/beijinho') beijinho
+                  li
+                    a(href='/brigadeiro') Brigadeiro
+                  li
+                    a(href='/churros') churros
+                  li
+                    a(href='/danette') danette
+                  li
+                    a(href='/limao') lim&atilde;o
+                  li
+                    a(href='limaoBrigadeiro') lim&atilde;o c/ brigadeiro
+                  li
+                    a(href='/maracuja') maracuj&aacute;
+                  li
+                    a(href='/pacoca') pa&ccedil;oca
+                  li
+                    a(href='/pacocaBrigadeiro') pa&ccedil;oca c/ brigadeiro
+                  li
+                    a(href='/prestigio') prest&iacute;gio
+                // submenu do submenu do submenu
+              li
+                a(href='#') Premium
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/abacaxiCoco') Abacaxi c/ coco
+                  li
+                    a(href='/banana') banana caramelada
+                  li
+                    a(href='/floresta') floresta negra
+                  li
+                    a(href='/maracujaChantilly') maracuj&aacute; c/ chantilly
+                  li
+                    a(href='/ninhoMorango') morango c/ nutella
+                  li
+                    a(href='/ninhoMorango') ninho c/ morango
+                  li
+                    a(href='/ninhoNutella') ninho c/ nutella
+                  li
+                    a(href='/nutellaMMs') nutella c/ m&amp;ms
+                  li
+                    a(href='/oreo') oreo
+                  li
+                    a(href='/ovomaltine') ovomaltine
+                // submenu do submenu do submenu
+            // submenu do submenu
+          li
+            a(href='/cupcakes') cupcakes
+          li
+            a(href='/docinhos') docinhos
+        // submenu
+      li
+        a(href='/#sobre') sobre
+      li
+        a(href='/#contato') contato
+  .logo
+    figure
+      img(src='imagens/Logo.png' alt='Logo Delícias da Nane')
+  section.busca
+    .text-center
+      a.btn.purple-gradient.btn-rounded(href='' data-toggle='modal' data-target='#elegantModalForm') login
+    form.form-inline
+      input.form-control.mr-sm-2(type='search' placeholder='Pesquisar' aria-label='Pesquisar')
+      button.btn.btn-outline-info(type='submit') Pesquisar
+
+
+#home.corpo
+  .frontal
+    img(src='imagens/Logo.png')
+  #sobre.sobre
+    .porCima
+      p#h1
+        b Nossa Hist&oacute;ria
+      p#h2 Sobre N&oacute;s
+      #texto
+        p
+          | H&aacute; muito tempo tenho paix&atilde;o em cozinhar e fazer doces, bolos e sobremesas. Comecei a fazer
+          | cupcakes
+          | e docinhos para as festas de fam&iacute;lia, nada muito elaborado, e todos achavam deliciosos. Ent&atilde;o
+          | algumas pessoas por gostarem, come&ccedil;aram a fazer encomendas e sugerirem que que fizesse desse
+          | hobby
+          | uma fonte de renda. Depois de algum tempo pensando no assunto pensei que poderia ajudar nas
+          | despesas
+          | da casa, inseri o que fazia para familia nos potes de bolos e passei a oferece-los. Conclus&atilde;o: o
+          | que
+          | era
+          | apenas um hobby, coisa de fam&iacute;lia, passou a ser um sucesso de vendas. Surgiu ent&atilde;o a marca
+          | &quot;Del&iacute;cias
+          | da
+          | Nane&quot;.
+      p Rosane Moraes - Fundadora
+    video(autoplay='autoplay' muted='' loop='')
+      source(src='imagens/Chocolate.mp4' type='video/Mp4')
+  #contato.contato
+    // Section: Contact v.2
+    section.my-5
+      // Section heading
+      h2.h1-responsive.font-weight-bold.text-center Entre em Contato!
+      h4 Delicias da Nane
+      // Section description
+      p.text-center.w-responsive.mx-auto.my-5
+        | Para quaisquer sugest&otilde;es, dicas ou reclama&ccedil;&otilde;es, entre
+        | em contato conosco
+        | atrav&eacute;s do nosso formul&aacute;rio abaixo.
+        br
+        |  Estaremos aqui para ouvi-lo, sempre!
+      // Grid row
+      .row
+        // Grid column
+        .col-md-9.mb-md-0.mb-5
+          form
+            // Grid row
+            .row
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#contact-name.form-control(type='text' , placeholder='Seu nome' )
+                  label(for='contact-name') 
+              // Grid column
+              // Grid column
+              .col-md-6
+                .md-form.mb-0
+                  input#contact-email.form-control(type='text', placeholder='Seu e-mail')
+                  label(for='contact-email')
+              // Grid column
+            // Grid row
+            // Grid row
+            .row
+              // Grid column
+              .col-md-12
+                .md-form.mb-0
+                  input#contact-Subject.form-control(type='text', placeholder='Assunto')
+                  label(for='contact-Subject') 
+              // Grid column
+            // Grid row
+            // Grid row
+            .row
+              // Grid column
+              .col-md-12
+                .md-form
+                  textarea#contact-message.form-control.md-textarea(rows='3' placeholder='Sua mensagem')
+                  label(for='contact-message') 
+                  
+              // Grid column
+            // Grid row
+          .text-center.text-md-left
+            a.btn.btn-success.btn-md Enviar
+        // Grid column
+        // Grid column
+        .col-md-3.text-center
+          ul.list-unstyled.mb-0
+            li
+              i.fas.fa-map-marker-alt.fa-2x.blue-text
+              p Cascatinha, Petr&oacute;polis - RJ.
+            li
+              i.fas.fa-phone.fa-2x.mt-4.blue-text
+              p + 55 24 XXXXX-XXXXX
+            li
+              i.fas.fa-envelope.fa-2x.mt-4.blue-text
+              p.mb-0 contato@deliciasdanane.com.br
+        // Grid column
+      // Grid row
+    // Section: Contact v.2
+
+
+
+// Modal
+#elegantModalForm.modal.fade(tabindex='9' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true')
+  .modal-dialog(role='document')
+    // Content
+    .modal-content.form-elegant
+      // Header
+      .modal-header.text-center
+        h3#myModalLabel.modal-title.w-100.dark-grey-text.font-weight-bold.my-3
+          strong Entrar
+        button.close(type='button' data-dismiss='modal' aria-label='Close')
+          span(aria-hidden='true') &times;
+      // Body
+      .modal-body.mx-4
+        // Body
+        .md-form.mb-5
+          input#Form-email1.form-control.validate(type='email')
+          label(data-error='wrong' data-success='right' for='Form-email1') Seu email
+        .md-form.pb-3
+          input#Form-pass1.form-control.validate(type='password')
+          label(data-error='wrong' data-success='right' for='Form-pass1') Sua senha
+          p.font-small.blue-text.d-flex.justify-content-end
+            | Esqueceu a 
+            a.blue-text.ml-1(href='#')
+              | Senha?
+        .text-center.mb-3
+          button.btn.purple-gradient.btn-block.btn-rounded.z-depth-1a(type='button')
+            | Entrar
+        p.font-small.dark-grey-text.text-right.d-flex.justify-content-center.mb-3.pt-2
+          | ou
+          | Entre
+          | com:
+        .row.my-3.d-flex.justify-content-center
+          // Facebook
+          button.btn.btn-white.btn-rounded.mr-md-3.z-depth-1a(type='button')
+            i.fab.fa-facebook-f.text-center
+          // Twitter
+          button.btn.btn-white.btn-rounded.mr-md-3.z-depth-1a(type='button')
+            i.fab.fa-twitter
+          // Google +
+          button.btn.btn-white.btn-rounded.z-depth-1a(type='button')
+            i.fab.fa-google-plus-g
+      // Footer
+      .modal-footer.mx-5.pt-3.mb-1
+        p.font-small.grey-text.d-flex.justify-content-end
+          | Não cadastrado? 
+          a.blue-text.ml-1(href='/cadastro')
+            | Cadastre-se
+    // /.Content
+// Modal
+
+include footer.pug
+
+
+script(src='js/jquery-3.4.1.min.js')
+script(src='js/bootstrap.min.js')
+script(src='js/popper.js')
+script(src='js/mdb.min.js')
+script(src='js/f.js')
+script(src='js/script-index.js')

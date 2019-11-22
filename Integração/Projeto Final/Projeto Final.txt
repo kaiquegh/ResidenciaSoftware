@@ -1,0 +1,52 @@
+PROJETO FINAL:
+Data de entrega - 13/11/2019
+- Ciclos:
+	1) Estudar documentações
+	2) Implementar
+	3) Testar
+	4) Revisar cronograma inicial
+
+
+Escopo de criação do projeto:
+
+> Site prático - definir um tema:
+	- Bolos da Nane:
+		- cadastro de usuários - Admin, comum;
+		- cadastro de produtos;
+		- pesquisa de produtos;
+		- registro de vendas;
+
+
+Requisitos:
+
+> Documentação do projeto:
+	- dscrição
+	- requisitos
+	- cronograma
+	- tecnologias utilizadas
+
+
+> FrontEnd:
+	- HTML;
+	- CSS (separado do HTML);
+	- Javascritp (Node.js): separado do HTML, usando funções e classes;
+	- Validação de dados;
+	- Funcionalidade: cadastro, pesquisa, visualização, remoção,....
+
+
+> BackEnd:
+	- Operações no B.D.(select, insert, delete, update,...);
+
+
+
+> Banco de dados(de acordo com a orientação do curso):
+	- PHP;
+	- Javascritp (Node.js);
+	- Criar tabelas:
+		- usuários
+		- produtos
+		- vendas
+		- pedidos
+
+
+

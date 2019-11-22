@@ -1,0 +1,154 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Del&iacute;cias da Nane
+  link(rel='stylesheet' href='css/reset.css')
+  link(rel='stylesheet' href='css/produtos.css')
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.2/css/all.css')
+  link(rel='stylesheet' href='css/bootstrap.min.css')
+  link(rel='stylesheet' href='css/mdb.min.css')
+  link(rel='stylesheet' href='css/style.css')
+header.transition
+  .navegacao
+    ul.menu.clearfix
+      li
+        a(href='/') home
+      li
+        a(href='/delicias') delicias
+        // Nível 1
+        // submenu
+        ul.sub-menu.clearfix
+          li
+            a(href='/corte') Bolos de Corte
+          li
+            a(href='#') Bolos de Pote
+            // Nível 2
+            // submenu do submenu
+            ul.sub-menu
+              li
+                a(href='#') Tradicionais
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/beijinho') beijinho
+                  li
+                    a(href='/brigadeiro') Brigadeiro
+                  li
+                    a(href='/churros') churros
+                  li
+                    a(href='/danette') danette
+                  li
+                    a(href='limao') lim&atilde;o
+                  li
+                    a(href='limaoBrigadeiro') lim&atilde;o c/ brigadeiro
+                  li
+                    a(href='maracuja') maracuj&aacute;
+                  li
+                    a(href='pacoca') pa&ccedil;oca
+                  li
+                    a(href='pacocaBrigadeiro') pa&ccedil;oca c/ brigadeiro
+                  li
+                    a(href='/prestigio') prest&iacute;gio
+                // submenu do submenu do submenu
+              li
+                a(href='#') Premium
+                // Nível 3
+                // submenu do submenu do submenu
+                ul.sub-menu
+                  li
+                    a(href='/abacaxiCoco') Abacaxi c/ coco
+                  li
+                    a(href='/banana') banana caramelada
+                  li
+                    a(href='/floresta') floresta negra
+                  li
+                    a(href='/maracujaChantilly') maracuj&aacute; c/ chantilly
+                  li
+                    a(href='/morangoNutella') morango c/ nutella
+                  li
+                    a(href='/ninhoMorango') ninho c/ morango
+                  li
+                    a(href='/ninhoNutella') ninho c/ nutella
+                  li
+                    a(href='/nutellaMMs') nutella c/ m&amp;ms
+                  li
+                    a(href='/oreo') oreo
+                  li
+                    a(href='/ovomaltine') ovomaltine
+                // submenu do submenu do submenu
+            // submenu do submenu
+          li
+            a(href='/cupcakes') cupcakes
+          li
+            a(href='/docinhos') docinhos
+        // submenu
+      li
+        a(href='/#sobre') sobre
+      li
+        a(href='/#contato') contato
+  .logo
+    figure
+      img(src='imagens/Logo.png' alt='Logo Delícias da Nane')
+  section.busca
+    .text-center
+      a.btn.purple-gradient.btn-rounded(href='' data-toggle='modal' data-target='#elegantModalForm') login
+    form.form-inline
+      input.form-control.mr-sm-2(type='search' placeholder='Pesquisar' aria-label='Pesquisar')
+      button.btn.btn-outline-info(type='submit') Pesquisar
+#home.corpo
+  #tituloProdutos
+    h2
+      b Produtos
+    h4 Del&iacute;cias da Nane
+  .slidesProdutos
+    // Full-width images with number text
+    .mySlides
+      .numbertext 1 / 4
+      img(src='imagens/limao-brigadeiro.jpg' style='width:100%')
+    .mySlides
+      .numbertext 2 / 4
+      img(src='imagens/limao-brigadeiro.jpg' style='width:100%')
+    .mySlides
+      .numbertext 3 / 4
+      img(src='imagens/limao-brigadeiro.jpg' style='width:100%')
+    .mySlides
+      .numbertext 4 / 4
+      img(src='imagens/limao-brigadeiro.jpg' style='width:100%')
+    // Next and previous buttons
+    a.prev(onclick='plusSlides(-1)') &#x276E;
+    a.next(onclick='plusSlides(1)') &#x276F;
+    // Thumbnail images
+    .rowSlides
+      .column
+        img.demo.cursor(src='imagens/limao-brigadeiro.jpg' style='width:100%' onclick='currentSlide(1)' alt='The Woods')
+      .column
+        img.demo.cursor(src='imagens/limao-brigadeiro.jpg' style='width:100%' onclick='currentSlide(2)' alt='Cinque Terre')
+      .column
+        img.demo.cursor(src='imagens/limao-brigadeiro.jpg' style='width:100%' onclick='currentSlide(3)' alt='Mountains and fjords')
+      .column
+        img.demo.cursor(src='imagens/limao-brigadeiro.jpg' style='width:100%' onclick='currentSlide(4)' alt='Northern Lights')
+  .descricaoProdutos
+    h3
+      b Cupcakes 
+    h4#nome Sabores diversos
+    h5 R$ 4,00 (unidade)
+    br
+    p
+      | Com camadas intercaladas de bolo e recheio cremoso, com a massa bem fofinha.
+    #botoes
+      .def-number-input.number-input.safari_only
+        button.minus(onclick="this.parentNode.querySelector('input[type=number]').stepDown()")
+        input.quantity(min='1' name='quantity' value='1' type='number')
+        button.plus(onclick="this.parentNode.querySelector('input[type=number]').stepUp()")
+      button.btn.btn-outline-default.btn-rounded.waves-effect(type='button' onclick='addCarrinho(id)') Adicionar
+
+include footer.pug
+
+script(src='js/jquery-3.4.1.min.js')
+script(src='js/popper.js')
+script(src='js/bootstrap.min.js')
+script(src='js/mdb.min.js')
+script(src='js/script-index.js')
