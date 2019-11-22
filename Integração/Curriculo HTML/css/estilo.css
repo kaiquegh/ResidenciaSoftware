@@ -1,0 +1,116 @@
+#Principal{
+    display: flex;
+    display: inline-flex;
+    justify-content: center;
+    background: lightgray;
+
+}
+
+#Left{
+    background-color:lightgrey;
+    float: left;
+    width: 50%;
+
+}
+
+#InfoPS{
+    text-align: center;
+    background-color: white;
+}
+
+#Right{
+    float: right;
+    background-color: white;
+    width: 50%;
+    margin-left: 4px;
+
+}
+hr{
+    border: 2px solid lightgray;
+    margin-top: -15px;
+}
+#InfoRS{
+    text-align: center;
+    background-color: white;
+    margin-top: -8px;
+
+}
+
+#InfoRS img{
+    margin-top: 50px;
+    margin-left:  10px;
+    margin-bottom:  50px;
+    margin-right:  10px;
+}
+
+#rodape{
+    background-color: white;
+    border: 4px solid lightgray;
+ 
+}
+
+#imgPerfil{
+    border-radius: 200px;
+    height: 200px;
+
+}
+
+.P{
+    text-align: justify;
+    margin: 15px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;   
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+.experiencias{
+   
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 20px;
+        
+}
+.formAcad{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 30px;
+}
+
+footer h2{
+    font-size  : 25px;
+    margin-left: 20px;
+
+}
+footer p{
+    margin-left: 10px;
+
+}
+
+.imgEmpresas{
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 15px;    
+}
+
+.textoDesFunc{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    margin-top: -75px;
+    padding: 10px;
+}
+
+.certificado{
+    text-align: center;
+    margin: 20px;
+    padding: 20px; 
+}
+
+.certificado, img{
+    margin: 20px;
+}
