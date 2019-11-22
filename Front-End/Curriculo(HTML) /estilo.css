@@ -1,0 +1,25 @@
+body{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#foto3x4 {
+    float: right;
+    float:top;
+    margin-top: 1%;
+    
+    
+}
+
+#imgju{
+    width: 60%;
+}
+
+.dadosPessoais{
+    float: left;
+    margin-left: 5%;
+}
+
+.hrzin{
+    height: 2px;
+    background-color: black;
+}
