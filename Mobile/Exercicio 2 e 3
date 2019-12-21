@@ -1,0 +1,88 @@
+import React, { Component } from "react";
+import "./App.css";
+
+//Componentes de Classe
+export default class CadastroUsuario extends Component {
+  constructor() {
+    super();
+    this.state = { pessoas: [] };
+  }
+
+  render() {
+    return (
+      <>
+        <form onSubmit={this.cadastrarUsuario}>
+          <input
+            type="text"
+            placeholder="Nome"
+            value={this.state.nome}
+            onChange={evento => {
+              this.setState({ nome: evento.target.value });
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Endereço"
+            value={this.state.end}
+            onChange={evento => {
+              this.setState({ end: evento.target.value });
+            }}
+          />
+          <input
+            type="text"
+            placeholder="Telefone"
+            value={this.state.tel}
+            onChange={evento => {
+              this.setState({ tel: evento.target.value });
+            }}
+          />
+          <input type="submit" />
+        </form>
+        <table border="2px">
+
+          <tr>
+            <th>Nome</th>
+            <th>End</th>
+            <th>Tel</th>
+            
+          </tr>
+
+
+          {this.state.pessoas.map((pessoa, index) => (
+
+            <tr>
+              <td>{pessoa.nome}</td>
+              <td>{pessoa.end}</td>
+              <td>{pessoa.tel}</td>
+              <button onClick={() => this.removerUsuario(index)}>Delete</button>
+            </tr>
+
+          ))}
+
+        </table>
+
+      </>
+    );
+  }
+
+  cadastrarUsuario = (evento) => {
+    evento.preventDefault();
+    let pessoa = { nome: this.state.nome, end: this.state.end, tel: this.state.tel }
+    let kaique = [...this.state.pessoas, pessoa];
+    this.setState({ pessoas: kaique });
+  }
+
+  removerUsuario = (index) => {
+    let novoPessoas = this.state.pessoas.filter((pessoa,i)=>{
+      if(i == index){
+        return false;
+      }
+      return true;
+    })
+    this.setState({
+      pessoas:novoPessoas
+    });
+
+  
+  }
+}
